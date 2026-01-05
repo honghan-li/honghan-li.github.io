@@ -28,6 +28,7 @@ h1 {
     font-weight: 400;
     font-style: normal;
     font-size: 4rem;
+    text-align: center;
 }
 
 .socials-div {
@@ -41,4 +42,13 @@ h1 {
         color: #333333;
         text-decoration: none
     }
+}
+
+.film-grain-svg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
 }

@@ -32,12 +32,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <h1>I am Honghan Li</h1>
+    <svg
+      class="film-grain-svg"
+      viewBox="0 0 100 100"
+      preserveAspectRatio="none"
+    >
+      <filter id="noiseFilter">
+        <feTurbulence
+          type="fractalNoise"
+          baseFrequency="5"
+          numOctaves="3"
+          stitchTiles="stitch"
+        />
+      </filter>
+      <rect
+        width="100%"
+        height="100%"
+        filter="url(#noiseFilter)"
+        opacity="0.2"
+      />
+    </svg>
+    <h1>I&nbsp;am Honghan&nbsp;Li</h1>
     <img
       src="/assets/thumb.avif"
       alt="Yes, I am Honghan Li"
       title="Yes, I am Honghan Li"
       width="500rem"
+      style="max-width: 100vw"
     />
     <footer>
       <div>
